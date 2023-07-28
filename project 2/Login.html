@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+
+  <!------ <div class="header">--------->
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="main.html"><img src="images/backwhite.png" width="38px"></a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="images/logo.png" width="140px">
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="main.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+<!------</div>------>
+<br><br><br>
+
+
+ <!-----------sign in----------->
+<center>
+<p style="color:rgba(253, 5, 5, 0.863);font-weight:bold;font-size:4rem;">
+  Sign In
+</p><br>
+<form action="payment.html">
+<div class="datacontainer">
+<br>
+<label style="color:rgb(255, 123, 0);font-weight:bold;font-size:1.8rem;">EMAIL </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input style="background-color:rgba(0, 0, 0, 0.041);" type="text" name="E-mail" id="txt" placeholder="Enter Your Email ID" required><br><br><br><br>
+<label style="color:rgb(255, 123, 0);font-weight:bold;font-size:1.8rem;">PASSWORD</label> &nbsp; &nbsp;
+<input style="background-color:rgba(0, 0, 0, 0.041);" type="password" name="" id="txt" placeholder="Enter Your Password" required><br><br><br>
+<a href="signup.html"><p style="color: rgb(238, 3, 3);">don't have an account?</p></a>
+<input style="color: black; font-weight:bolder;" type="submit" value="SIGN IN" class="btn">
+</div>
+</form>
+</center>
+<br><br><br><br><br>
+
+  <!-----------footer----------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios Devices.</p>
+          <div class="app-logo">
+            <a href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026415_creativeid_535350509927_device_c&gclid=Cj0KCQiA6LyfBhC3ARIsAG4gkF9d_yNGSOeO-NXf1LtXQmB9xshFwRCxfF_cLhhH6v9vLuEPl7ncJDoaAuHDEALw_wcB&gclsrc=aw.ds"><img src="images/play-store.png"></a>
+            <a href="https://www.apple.com/in/app-store/"><img src="images/app-store.png"></a>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png">
+          <p>Our Purpose is to Sustainably make Others Happy.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="https://www.facebook.com/login/"><li>Facebook</li></a>
+            <a href="https://www.instagram.com/"><li>Instagram</li></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><li>Twitter</li></a>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2016 - By Indian Market Organisation.</p> <br>
+      <marquee><p style="color:rgb(255, 255, 255)"><sup style="color:red">*</sup>All Terms and Conditions are reserved by ITN (Indian Trading Network)</p></marquee><br>
+    </div>
+  </div>
+  
+  <!--------------js for menu------------>
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+         {
+          MenuItems.style.maxHeight = "200px";
+         }
+      else
+         {
+          MenuItems.style.maxHeight = "0px";
+         }
+  }
+  </script>
+</body>
+</html>
+ 
